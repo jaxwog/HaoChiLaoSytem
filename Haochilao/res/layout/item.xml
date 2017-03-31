@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textViewid"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_x="9dp"
+        android:layout_y="12dp"
+        android:text="id"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewname"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_x="45dp"
+        android:layout_y="12dp"
+        android:text="name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewphone"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_x="106dp"
+        android:layout_y="10dp"
+        android:text="phone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewaddress"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_x="212dp"
+        android:layout_y="10dp"
+        android:text="address"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</AbsoluteLayout>

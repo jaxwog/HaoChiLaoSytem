@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.multipart.parser" value="cos" />
+	<constant name="struts.multipart.parser" value="jakarta" />
+	<constant name="struts.custom.i18n.resources" value="mess" />
+	<constant name="struts.i18n.encoding" value="GB18030" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+	<package name="action" extends="struts-default">
+		<action name="adminlogin" class="android.hcl.action.LoginAction"
+			method="adminlogin">
+			<result name="success">/adminmain.jsp</result>
+			<result name="input">/adminlogin.jsp</result>
+		</action>
+		<action name="listAllCustomer" class="android.hcl.action.CustomerAction"
+			method="listAllCustomer">
+			<result name="success">/ManagerCusPage.jsp</result>
+		</action>
+		<action name="CusdelChecked" class="android.hcl.action.CustomerAction"
+			method="delChecked">
+			<result>/ManagerCusPage.jsp</result>
+		</action>
+		<action name="cusDelete" class="android.hcl.action.CustomerAction"
+			method="cusDelete">
+			<result name="success">/ManagerCusPage.jsp</result>
+		</action>
+		<action name="listAllBusiness" class="android.hcl.action.BusinessAction"
+			method="listAllBusiness">
+			<result name="success">/ManagerBusPage.jsp</result>
+		</action>
+		<action name="BusdelChecked" class="android.hcl.action.BusinessAction"
+			method="delChecked">
+			<result>/ManagerBusPage.jsp</result>
+		</action>
+		<action name="busDelete" class="android.hcl.action.BusinessAction"
+			method="busDelete">
+			<result name="success">/ManagerBusPage.jsp</result>
+		</action>
+		<action name="busregister" class="android.hcl.action.BusLoginAction"
+			method="busregister">
+			<result name="success">/businesslogin.jsp</result>
+			<result name="input">/saveBusPage.jsp</result>
+		</action>
+		<action name="listOwnBusiness" class="android.hcl.action.BusLoginAction"
+			method="listownBusiness">
+			<result name="success">/BusPage.jsp</result>
+		</action>
+		<action name="updateBus" class="android.hcl.action.BusinessAction"
+			method="updateBus">
+			<result name="success">/updatebusPage.jsp</result>
+		</action>
+		<action name="busupdate" class="android.hcl.action.BusinessAction"
+			method="busupdate">
+			<result name="success" type="redirect">listOwnBusiness.action</result>
+		</action>
+		<action name="saveDish" class="android.hcl.action.BusinessAction"
+			method="saveDish">
+			<result name="success">/saveDisPage.jsp</result>
+		</action>
+		<action name="dishSave" class="android.hcl.action.DishAction"
+			method="dishSave">
+			<result name="success" type="redirect">listOwnBusiness.action</result>
+			<result name="input">/saveDisPage.jsp</result>
+		</action>
+		<action name="listDish" class="android.hcl.action.BusinessAction"
+			method="listDish">
+			<result name="success" type="redirect">listOwnDish.action</result>
+		</action>
+		<action name="DisdelChecked" class="android.hcl.action.DishAction"
+			method="delChecked">
+			<result>/ManagerDisPage.jsp</result>
+		</action>
+		<action name="dishDelete" class="android.hcl.action.DishAction"
+			method="dishDelete">
+			<result name="success">/ManagerDisPage.jsp</result>
+		</action>
+		<action name="listOwnDish" class="android.hcl.action.DishAction"
+			method="listOwnDish">
+			<result name="success">/ManagerDisPage.jsp</result>
+		</action>
+		<action name="listAllBook" class="android.hcl.action.BookAction"
+			method="listAllBook">
+			<result name="success">/QueryOrderPage.jsp</result>
+		</action>
+		<action name="updateBoo" class="android.hcl.action.BookAction"
+			method="updateBoo">
+			<result name="success">/updateBooPage.jsp</result>
+		</action>
+		<action name="booupdate" class="android.hcl.action.BookAction"
+			method="booupdate">
+			<result name="success" type="redirect">listOwnBook.action</result>
+		</action>
+
+		<action name="listOwnBook" class="android.hcl.action.BookAction"
+			method="listOwnBook">
+			<result name="success">/ManagerBooPage.jsp</result>
+		</action>
+		<action name="buslogin" class="android.hcl.action.BusLoginAction"
+			method="buslogin">
+			<result name="success">/businessmain.jsp</result>
+			<result name="input">/businesslogin.jsp</result>
+		</action>
+	</package>
+
+	<package name="login" extends="json-default">
+		<action name="Cuslogin" class="android.hcl.action.CusJsonAction"
+			method="Cuslogin">
+			<result type="json"></result>
+		</action>
+		<action name="updateCus" class="android.hcl.action.CusJsonAction"
+			method="updateCus">
+			<result type="json"></result>
+		</action>
+		<action name="check" class="android.hcl.action.CusJsonAction"
+			method="check">
+			<result type="json"></result>
+		</action>
+		<action name="Cusregister" class="android.hcl.action.CusJsonAction"
+			method="Cusregister">
+			<result type="json"></result>
+		</action>
+		<action name="BusQuery" class="android.hcl.action.BusJsonAction"
+			method="BusQuery">
+			<result type="json"></result>
+		</action>
+		<action name="Cusupdate" class="android.hcl.action.CusJsonAction"
+			method="Cusupdate">
+			<result type="json"></result>
+		</action>
+		<action name="DisQuery" class="android.hcl.action.BusJsonAction"
+			method="DisQuery">
+			<result type="json"></result>
+		</action>
+		<action name="orderbook" class="android.hcl.action.booJsonAction"
+			method="orderbook">
+			<result type="json"></result>
+		</action>
+		<action name="BookQuery" class="android.hcl.action.booJsonAction"
+			method="BookQuery">
+			<result type="json"></result>
+		</action>
+		<action name="DisQueryByType" class="android.hcl.action.BusJsonAction"
+			method="DisQueryByType">
+			<result type="json"></result>
+		</action>
+		<action name="deleteQuery" class="android.hcl.action.booJsonAction"
+			method="delorder">
+			<result type="json"></result>
+		</action>
+				<action name="orderfinish" class="android.hcl.action.booJsonAction"
+			method="orderfinish">
+			<result type="json"></result>
+		</action>
+	</package>
+</struts>

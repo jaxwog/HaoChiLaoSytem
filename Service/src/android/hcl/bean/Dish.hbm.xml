@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE hibernate-mapping 
+PUBLIC  "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="android.hcl.bean.Dish" table="Dish">
+		<id name="dishId" type="java.lang.Integer">
+			<column name="dishId" />
+			<generator class="identity" />
+		</id>
+		<many-to-one name="business" class="android.hcl.bean.Business"
+			cascade="all" lazy="false">
+			<column name="businessid" unique="false" />
+		</many-to-one>
+		<property name="dishtype" type="java.lang.String">
+			<column name="dishtype" />
+		</property>
+		<property name="price" type="java.lang.Float">
+			<column name="price" />
+		</property>
+		<property name="dishName" type="java.lang.String">
+			<column name="dishName" />
+		</property>
+		<property name="dishMessage" type="java.lang.String">
+			<column name="dishMessage" />
+		</property>
+	</class>
+</hibernate-mapping>

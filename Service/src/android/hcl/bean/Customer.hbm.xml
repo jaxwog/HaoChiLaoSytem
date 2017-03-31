@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE hibernate-mapping 
+PUBLIC  "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="android.hcl.bean.Customer" table="Customer">
+		<id name="userid" column="userid" type="java.lang.Integer">
+			<generator class="identity"></generator>
+		</id>
+		<property name="username" column="username" type="java.lang.String" />
+		<property name="password" column="password" type="java.lang.String" />
+		<property name="userEmail" column="userEmail" type="java.lang.String" />
+		<property name="userPhone" column="userPhone" type="java.lang.String" />
+		<property name="userAddress" column="userAddress" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

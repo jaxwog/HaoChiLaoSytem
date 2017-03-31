@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffa500"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back_image_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#ffa500"
+            android:src="@drawable/back_imag_button" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:background="#ffa500"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="信息修改"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="1.用户点击好吃佬网注册页面的同意注册按钮并完成注册程序、获得好吃佬账号和密码时，视为用户与好吃佬网已达成《好吃佬用户协议》，
+        就用户进入好吃佬网消费（即用户通过好吃佬网与商家进行团购交易）达成本协议的全部约定。
+        2.好吃佬及用户均已认真阅读本《好吃佬用户协议》（下称“本协议”）中全部条款（特别是以黑体字标示出的关于好吃佬网及 用户重大权益的条款）及
+        好吃佬网发布的其他全部服务条款和操作规则的内容，对本协议及前述服务条款和规则均以知晓、理解并接受，同意将其作为确定双方权利义务的依据。"
+        android:textSize="18sp" >
+    </TextView>
+
+</LinearLayout>

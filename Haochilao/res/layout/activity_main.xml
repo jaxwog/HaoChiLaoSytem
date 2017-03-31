@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dbdbdb"
+    tools:context=".MainActivity" >
+    
+  
+
+    <LinearLayout
+        android:id="@+id/fragmentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#eee9e9"
+        android:orientation="horizontal" >
+
+        <LinearLayout style="@style/linaer_bottom" >
+
+            <RadioButton
+                android:id="@+id/ra_weixin_bt"
+                style="@style/rbt_bottom"
+               android:textColor="@android:color/black"
+                android:drawableTop="@drawable/n_find_h"
+                android:text="@string/weixin" />
+                
+        </LinearLayout>
+
+        <LinearLayout style="@style/linaer_bottom" >
+
+            <RadioButton
+                android:id="@+id/ra_wo_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/n_me_h"
+                android:text="@string/wo"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+        
+        <LinearLayout style="@style/linaer_bottom" >
+
+            <RadioButton
+                android:id="@+id/ra_tongxunlu_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/n_address_h"
+                android:text="@string/dingdan"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+
+
+        
+    </LinearLayout>
+
+</RelativeLayout>

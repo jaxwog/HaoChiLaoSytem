@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#ffa500"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back_image_button"
+            style="?android:attr/buttonStyleSmall"
+            android:src="@drawable/back_imag_button"
+            android:background="#ffa500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            />
+
+
+        <TextView
+            android:id="@+id/storename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="店铺名字"
+            android:textColor="@android:color/white"
+            android:textSize="16dip" />
+
+    </RelativeLayout>
+
+</LinearLayout>

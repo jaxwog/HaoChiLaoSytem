@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffa500"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back_image_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffa500"
+            android:src="@drawable/back_imag_button" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:background="#ffa500"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="地址管理"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="用户名:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="密码:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="邮箱:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="手机号:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="送餐地址:" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etusername"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890_qwertyuiopasdfghjklzxcvbnm"
+                android:enabled="false"
+                android:hint="请输入用户名"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="请输入您的密码"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etemail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的邮箱"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etphone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的手机号"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的送餐地址"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="确定"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

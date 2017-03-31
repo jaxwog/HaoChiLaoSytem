@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE hibernate-mapping 
+PUBLIC  "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="android.hcl.bean.Business" table="Business">
+		<id name="busunessid" column="busunessid" type="java.lang.Integer">
+			<generator class="identity"></generator>
+		</id>
+		<property name="bususername" column="bususername" type="java.lang.String" />
+		<property name="buspassword" column="buspassword" type="java.lang.String" />
+		<property name="busunessname" column="busunessname" type="java.lang.String" />
+		<property name="busunessPhone" column="busunessPhone" type="java.lang.String" />
+		<property name="busunessAddress" column="busunessAddress"
+			type="java.lang.String" />
+	</class>
+</hibernate-mapping>

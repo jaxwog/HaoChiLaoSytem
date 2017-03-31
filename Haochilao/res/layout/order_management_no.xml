@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+ 	 <LinearLayout 
+ 	     android:layout_width="fill_parent"
+ 	     android:layout_height="wrap_content"
+ 	     android:gravity="center"
+ 	     android:background="#ffa500"
+ 	     >
+ 	     <TextView 
+ 	         android:layout_width="wrap_content"
+ 	         android:layout_height="wrap_content"
+ 	         android:padding="8sp"
+ 	         android:textSize="20sp"
+ 	         android:textColor="@android:color/white"
+ 	         android:text="订单"/>
+ 	 </LinearLayout>
+
+ 	 <LinearLayout
+ 	     android:layout_width="fill_parent"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_weight="1"
+ 	     android:gravity="center"
+ 	     android:orientation="vertical" >
+
+ 	     <TextView
+ 	         android:layout_width="wrap_content"
+ 	         android:layout_height="wrap_content"
+ 	         android:text="你还没有订单，赶快下一单吧~" />
+			<View android:layout_width="fill_parent"
+			      android:layout_height="40dp"/>
+ 	     <Button
+ 	         android:layout_width="120dp"
+ 	         android:layout_height="wrap_content"
+ 	         android:background="@drawable/button"
+ 	         android:text="定外卖" 
+ 	         android:textColor="@android:color/white"/>
+ 	 </LinearLayout>
+
+</LinearLayout>
+ 
